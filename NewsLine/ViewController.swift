@@ -8,7 +8,6 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
         presenter = PassagePresenter(data: data)
     }
 
@@ -17,8 +16,16 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell")!
-        cell.textLabel?.text = presenter.current[indexPath.row].content
-        return cell
+        if let content = presenter.current[indexPath.row].content {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Content")!
+            return cell
+        }
+
+        if let action = presenter.current[indexPath.row].action {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Action")!
+            return cell
+        }
+
+        return UITableViewCell()
     }
 }
