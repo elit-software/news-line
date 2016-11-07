@@ -1,11 +1,11 @@
 class PassagePresenter {
 
     let data: [PassageData]
-    var current: [PassageData]
+    var current: [TableData]
 
     init(data: [PassageData]) {
         self.data = data
-        self.current = [data.first!]
+        self.current = TableDataBuilder.build(data: data.first!)
     }
 
 
@@ -13,6 +13,9 @@ class PassagePresenter {
         let findPassage = data.filter { (passage) -> Bool in
             return passage.name == step
         }.first!
-        current.append(findPassage)
+
+        for new in TableDataBuilder.build(data: findPassage) {
+            current.append(new)
+        }
     }
 }
