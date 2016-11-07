@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--NewsLine-->
+        <!--News Line-->
         <scene sceneID="C1U-PQ-7Ct">
             <objects>
                 <tableViewController id="K6C-Px-kuI" customClass="TableViewController" customModule="NewsLine" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                             <outlet property="delegate" destination="K6C-Px-kuI" id="cGs-aJ-vyU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="NewsLine" id="G8F-II-VE1"/>
+                    <navigationItem key="navigationItem" title="News Line" id="G8F-II-VE1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-w0-32B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

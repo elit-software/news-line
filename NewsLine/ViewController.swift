@@ -9,6 +9,8 @@ class TableViewController: UITableViewController, ActionCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = PassagePresenter(data: data)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -160,12 +160,12 @@
 		EABE0C481DD0D353006F484E /* NewsLine */ = {
 			isa = PBXGroup;
 			children = (
+				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
 				EA9F727E1DD0F84F00486B10 /* syrian.html */,
 				EA9F72601DD0D4E500486B10 /* Reader.swift */,
 				EA9F72641DD0D88A00486B10 /* PassageData.swift */,
 				EA9F72681DD0D97400486B10 /* Parser.swift */,
 				EA9F726E1DD0DE3900486B10 /* PassageBuilder.swift */,
-				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
 				EABE0C4D1DD0D353006F484E /* Main.storyboard */,
 				EA9F726B1DD0DCCF00486B10 /* Supporting Files */,
 				EA9F72721DD0E6AD00486B10 /* PassagePresenter.swift */,
