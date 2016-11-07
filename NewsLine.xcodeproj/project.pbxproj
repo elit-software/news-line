@@ -10,6 +10,8 @@
 		0DB39BD31B77791710BD23BA /* Pods_NewsLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0587ACC88FC3BFF134CE73EB /* Pods_NewsLineUITests.framework */; };
 		ACC723831D92F65ABCFB4B3B /* Pods_NewsLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70440F113AFDBBD23CB8CBBE /* Pods_NewsLineTests.framework */; };
 		DB16ACA0363B8EA0C77C00BF /* Pods_NewsLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B0FC47A7F6D8B98199BCDC /* Pods_NewsLine.framework */; };
+		EA9F725F1DD0D4B800486B10 /* A.html in Resources */ = {isa = PBXBuildFile; fileRef = EA9F725E1DD0D4B800486B10 /* A.html */; };
+		EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72601DD0D4E500486B10 /* Reader.swift */; };
 		EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C491DD0D353006F484E /* AppDelegate.swift */; };
 		EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C4B1DD0D353006F484E /* ViewController.swift */; };
 		EABE0C4F1DD0D353006F484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABE0C4D1DD0D353006F484E /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		79E7003E6A8E842B1F178EE9 /* Pods-NewsLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsLineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsLineUITests/Pods-NewsLineUITests.release.xcconfig"; sourceTree = "<group>"; };
 		97DBDF4CC139BD64AC55A2AF /* Pods-NewsLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsLineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsLineTests/Pods-NewsLineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E01547A281AC04FDE0B85B /* Pods-NewsLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsLineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsLineUITests/Pods-NewsLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA9F725E1DD0D4B800486B10 /* A.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = A.html; sourceTree = "<group>"; };
+		EA9F72601DD0D4E500486B10 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		EABE0C461DD0D353006F484E /* NewsLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABE0C491DD0D353006F484E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABE0C4B1DD0D353006F484E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		EABE0C481DD0D353006F484E /* NewsLine */ = {
 			isa = PBXGroup;
 			children = (
+				EA9F725E1DD0D4B800486B10 /* A.html */,
+				EA9F72601DD0D4E500486B10 /* Reader.swift */,
 				EABE0C491DD0D353006F484E /* AppDelegate.swift */,
 				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
 				EABE0C4D1DD0D353006F484E /* Main.storyboard */,
@@ -286,6 +292,7 @@
 			files = (
 				EABE0C541DD0D353006F484E /* LaunchScreen.storyboard in Resources */,
 				EABE0C511DD0D353006F484E /* Assets.xcassets in Resources */,
+				EA9F725F1DD0D4B800486B10 /* A.html in Resources */,
 				EABE0C4F1DD0D353006F484E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */,
 				EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */,
 				EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */,
 			);
@@ -707,6 +715,7 @@
 				EABE0C701DD0D353006F484E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EABE0C711DD0D353006F484E /* Build configuration list for PBXNativeTarget "NewsLineTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +724,7 @@
 				EABE0C731DD0D353006F484E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EABE0C741DD0D353006F484E /* Build configuration list for PBXNativeTarget "NewsLineUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +733,7 @@
 				EABE0C761DD0D353006F484E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
