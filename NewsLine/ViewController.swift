@@ -17,8 +17,11 @@ class ViewController: UIViewController {
 
             // Search for nodes by XPath
             for link in doc.xpath("//tw-passagedata") {
+                print(link["name"])
                 print(link.text)
             }
         }
     }
 }
+
+
