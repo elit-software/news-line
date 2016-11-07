@@ -1,6 +1,6 @@
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, ActionCellDelegate {
 
     let data = Parser(content: Reader(name: "A").read()).parse()
 
@@ -17,15 +17,23 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let content = presenter.current[indexPath.row].content {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Content")!
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Content")! as? ContentCell
+            cell?.contentLabel.text = content
+            return cell!
         }
 
         if let action = presenter.current[indexPath.row].action {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Action")!
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Action")! as? ActionCell
+            cell?.actionButton.setTitle(action, for: .normal)
+            cell?.delegate = self
+            return cell!
         }
 
         return UITableViewCell()
+    }
+
+    func actionTriggered(_ action: String) {
+        presenter.action(step: action)
+        tableView.reloadData()
     }
 }

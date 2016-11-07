@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Content" id="xdr-B1-RiH">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Content" id="xdr-B1-RiH" customClass="ContentCell" customModule="NewsLine" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xdr-B1-RiH" id="CHQ-8l-efh">
@@ -40,8 +40,11 @@
                                         <constraint firstItem="ued-sK-rDu" firstAttribute="top" secondItem="CHQ-8l-efh" secondAttribute="topMargin" id="eiS-xv-C9f"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentLabel" destination="ued-sK-rDu" id="LFd-P1-mAK"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Action" id="s4m-8O-imL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Action" id="s4m-8O-imL" customClass="ActionCell" customModule="NewsLine" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s4m-8O-imL" id="giJ-iQ-oUU">
@@ -51,6 +54,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCA-Ha-P7t">
                                             <rect key="frame" x="164" y="6" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="actionTriggered:" destination="s4m-8O-imL" eventType="touchUpInside" id="fEQ-K0-bbQ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -58,6 +64,9 @@
                                         <constraint firstItem="xCA-Ha-P7t" firstAttribute="centerX" secondItem="giJ-iQ-oUU" secondAttribute="centerX" id="qX9-kg-MQI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actionButton" destination="xCA-Ha-P7t" id="h05-0N-aL0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -69,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-w0-32B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862.5" y="10.5"/>
+            <point key="canvasLocation" x="1180" y="10"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sOl-vL-3P8">
@@ -87,7 +96,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLG-YE-dOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275.5" y="10.5"/>
+            <point key="canvasLocation" x="303" y="10"/>
         </scene>
     </scenes>
 </document>
