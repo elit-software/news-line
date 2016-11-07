@@ -15,7 +15,8 @@ class Parser {
                 let name = link["name"] ?? ""
                 let content = link.text ?? ""
                 let passageData = PassageData(name: name,
-                                              content: content)
+                                              content: content,
+                                              next: [PassageData]())
                 data.append(passageData)
             }
         }
