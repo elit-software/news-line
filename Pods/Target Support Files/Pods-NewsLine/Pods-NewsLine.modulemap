@@ -1,0 +1,6 @@
+framework module Pods_NewsLine {
+  umbrella header "Pods-NewsLine-umbrella.h"
+
+  export *
+  module * { export * }
+}

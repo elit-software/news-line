@@ -1,0 +1,6 @@
+framework module Pods_NewsLineTests {
+  umbrella header "Pods-NewsLineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
