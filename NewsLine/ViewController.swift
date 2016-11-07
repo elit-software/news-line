@@ -2,7 +2,7 @@ import UIKit
 
 class TableViewController: UITableViewController, ActionCellDelegate {
 
-    let data = Parser(content: Reader(name: "A").read()).parse()
+    let data = Parser(content: Reader(name: "syrian").read()).parse()
 
     var presenter: PassagePresenter!
 
@@ -35,5 +35,9 @@ class TableViewController: UITableViewController, ActionCellDelegate {
     func actionTriggered(_ action: String) {
         presenter.action(step: action)
         tableView.reloadData()
+    }
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 }
