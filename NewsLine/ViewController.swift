@@ -37,6 +37,9 @@ class TableViewController: UITableViewController, ActionCellDelegate {
     func actionTriggered(_ action: String) {
         presenter.action(step: action)
         tableView.reloadData()
+        let indexPath = IndexPath(row: presenter.current.count - 1,
+                                  section: 0)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

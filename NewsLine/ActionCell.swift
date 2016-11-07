@@ -7,7 +7,6 @@ class ActionCell: UITableViewCell {
     @IBAction func actionTriggered(_ sender: Any) {
         let action = (sender as! UIButton).titleLabel?.text!
         delegate?.actionTriggered(action!)
-        actionButton.isEnabled = false
     }
 
     @IBOutlet weak var actionButton: UIButton!
