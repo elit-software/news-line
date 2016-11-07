@@ -12,6 +12,9 @@
 		DB16ACA0363B8EA0C77C00BF /* Pods_NewsLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B0FC47A7F6D8B98199BCDC /* Pods_NewsLine.framework */; };
 		EA9F725F1DD0D4B800486B10 /* A.html in Resources */ = {isa = PBXBuildFile; fileRef = EA9F725E1DD0D4B800486B10 /* A.html */; };
 		EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72601DD0D4E500486B10 /* Reader.swift */; };
+		EA9F72651DD0D88A00486B10 /* PassageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72641DD0D88A00486B10 /* PassageData.swift */; };
+		EA9F72671DD0D93000486B10 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = EA9F72661DD0D93000486B10 /* test.html */; };
+		EA9F72691DD0D97400486B10 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72681DD0D97400486B10 /* Parser.swift */; };
 		EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C491DD0D353006F484E /* AppDelegate.swift */; };
 		EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C4B1DD0D353006F484E /* ViewController.swift */; };
 		EABE0C4F1DD0D353006F484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABE0C4D1DD0D353006F484E /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		C3E01547A281AC04FDE0B85B /* Pods-NewsLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsLineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsLineUITests/Pods-NewsLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA9F725E1DD0D4B800486B10 /* A.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = A.html; sourceTree = "<group>"; };
 		EA9F72601DD0D4E500486B10 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		EA9F72641DD0D88A00486B10 /* PassageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageData.swift; sourceTree = "<group>"; };
+		EA9F72661DD0D93000486B10 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		EA9F72681DD0D97400486B10 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		EABE0C461DD0D353006F484E /* NewsLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABE0C491DD0D353006F484E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABE0C4B1DD0D353006F484E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 			children = (
 				EA9F725E1DD0D4B800486B10 /* A.html */,
 				EA9F72601DD0D4E500486B10 /* Reader.swift */,
+				EA9F72641DD0D88A00486B10 /* PassageData.swift */,
+				EA9F72681DD0D97400486B10 /* Parser.swift */,
 				EABE0C491DD0D353006F484E /* AppDelegate.swift */,
 				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
 				EABE0C4D1DD0D353006F484E /* Main.storyboard */,
@@ -156,6 +164,7 @@
 		EABE0C5D1DD0D353006F484E /* NewsLineTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA9F72661DD0D93000486B10 /* test.html */,
 				EABE0C5E1DD0D353006F484E /* NewsLineTests.swift */,
 				EABE0C601DD0D353006F484E /* Info.plist */,
 			);
@@ -301,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9F72671DD0D93000486B10 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +468,8 @@
 			files = (
 				EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */,
 				EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */,
+				EA9F72691DD0D97400486B10 /* Parser.swift in Sources */,
+				EA9F72651DD0D88A00486B10 /* PassageData.swift in Sources */,
 				EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,36 +1,17 @@
-//
-//  NewsLineTests.swift
-//  NewsLineTests
-//
-//  Created by Tiago Martinho on 07/11/2016.
-//  Copyright © 2016 elit. All rights reserved.
-//
-
 import XCTest
 @testable import NewsLine
 
-class NewsLineTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
+class PassageDataParserTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let passageData = [PassageData(name: "Step 1", content: "Double-click this passage to edit it. \n[[Step 2-&gt;Step 2]]\n[[Step 3-&gt;Step 3]]"),
+                           PassageData(name: "Step 2", content: "Double-click this passage to edit it."),
+                           PassageData(name: "Step 3", content: "Double-click this passage to edit it.")
+                           ]
+        let content = Reader(name: "test", type: "html", bundle: Bundle(for: PassageDataParserTests.self)).read()
+        let parser = Parser(content: content)
+
+        let result = parser.parse()
+
+        XCTAssertEqual(passageData, result)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
