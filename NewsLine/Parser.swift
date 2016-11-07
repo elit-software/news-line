@@ -14,9 +14,8 @@ class Parser {
             for link in doc.xpath("//tw-passagedata") {
                 let name = link["name"] ?? ""
                 let content = link.text ?? ""
-                let passageData = PassageData(name: name,
-                                              content: content,
-                                              next: [PassageData]())
+                let passageData = PassageBuilder(name: name,
+                                                 content: content).build()
                 data.append(passageData)
             }
         }

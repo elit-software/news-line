@@ -1,7 +1,7 @@
 struct PassageData {
     let name: String
     let content: String
-    let next: [PassageData]
+    let next: [String]
 }
 
 extension PassageData: Equatable {}
