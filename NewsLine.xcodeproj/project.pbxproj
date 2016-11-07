@@ -16,6 +16,8 @@
 		EA9F72691DD0D97400486B10 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72681DD0D97400486B10 /* Parser.swift */; };
 		EA9F726D1DD0DCED00486B10 /* PassageBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F726C1DD0DCED00486B10 /* PassageBuilderTests.swift */; };
 		EA9F726F1DD0DE3900486B10 /* PassageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F726E1DD0DE3900486B10 /* PassageBuilder.swift */; };
+		EA9F72711DD0E60100486B10 /* PassagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72701DD0E60100486B10 /* PassagePresenterTests.swift */; };
+		EA9F72731DD0E6AD00486B10 /* PassagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F72721DD0E6AD00486B10 /* PassagePresenter.swift */; };
 		EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C491DD0D353006F484E /* AppDelegate.swift */; };
 		EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C4B1DD0D353006F484E /* ViewController.swift */; };
 		EABE0C4F1DD0D353006F484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABE0C4D1DD0D353006F484E /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		EA9F72681DD0D97400486B10 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		EA9F726C1DD0DCED00486B10 /* PassageBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageBuilderTests.swift; sourceTree = "<group>"; };
 		EA9F726E1DD0DE3900486B10 /* PassageBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageBuilder.swift; sourceTree = "<group>"; };
+		EA9F72701DD0E60100486B10 /* PassagePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassagePresenterTests.swift; sourceTree = "<group>"; };
+		EA9F72721DD0E6AD00486B10 /* PassagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassagePresenter.swift; sourceTree = "<group>"; };
 		EABE0C461DD0D353006F484E /* NewsLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABE0C491DD0D353006F484E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABE0C4B1DD0D353006F484E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				EABE0C491DD0D353006F484E /* AppDelegate.swift */,
-				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
-				EABE0C4D1DD0D353006F484E /* Main.storyboard */,
 				EABE0C501DD0D353006F484E /* Assets.xcassets */,
 				EABE0C521DD0D353006F484E /* LaunchScreen.storyboard */,
 				EABE0C551DD0D353006F484E /* Info.plist */,
@@ -155,7 +157,10 @@
 				EA9F72641DD0D88A00486B10 /* PassageData.swift */,
 				EA9F72681DD0D97400486B10 /* Parser.swift */,
 				EA9F726E1DD0DE3900486B10 /* PassageBuilder.swift */,
+				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
+				EABE0C4D1DD0D353006F484E /* Main.storyboard */,
 				EA9F726B1DD0DCCF00486B10 /* Supporting Files */,
+				EA9F72721DD0E6AD00486B10 /* PassagePresenter.swift */,
 			);
 			path = NewsLine;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				EABE0C5E1DD0D353006F484E /* ParserTests.swift */,
 				EA9F726C1DD0DCED00486B10 /* PassageBuilderTests.swift */,
 				EA9F726A1DD0DCC400486B10 /* Supporting Files */,
+				EA9F72701DD0E60100486B10 /* PassagePresenterTests.swift */,
 			);
 			path = NewsLineTests;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */,
+				EA9F72731DD0E6AD00486B10 /* PassagePresenter.swift in Sources */,
 				EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */,
 				EA9F726F1DD0DE3900486B10 /* PassageBuilder.swift in Sources */,
 				EA9F72691DD0D97400486B10 /* Parser.swift in Sources */,
@@ -391,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9F726D1DD0DCED00486B10 /* PassageBuilderTests.swift in Sources */,
+				EA9F72711DD0E60100486B10 /* PassagePresenterTests.swift in Sources */,
 				EABE0C5F1DD0D353006F484E /* ParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,5 +26,3 @@ class PassageBuilder {
                            next: next)
     }
 }
-
-//"Double-click this passage to edit it.\n\n[[Step 2->Step 2]]\n[[Step 3->Step 3]]"
