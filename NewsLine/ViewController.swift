@@ -2,7 +2,7 @@ import UIKit
 
 class TableViewController: UITableViewController, ActionCellDelegate {
 
-    let data = Parser(content: Reader(name: "syrian").read()).parse()
+    let data = Parser(content: Reader(name: "Syrian Refugees").read()).parse()
 
     var presenter: PassagePresenter!
 
