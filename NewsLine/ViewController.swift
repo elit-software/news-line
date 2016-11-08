@@ -6,6 +6,8 @@ class TableViewController: UITableViewController, ActionCellDelegate {
 
     var presenter: PassagePresenter!
 
+    var alreadyAnimated = Set<IndexPath>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = PassagePresenter(data: data)
@@ -44,5 +46,28 @@ class TableViewController: UITableViewController, ActionCellDelegate {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        if alreadyAnimated.contains(indexPath) {
+            return
+        }
+
+        alreadyAnimated.insert(indexPath)
+
+        if let _ = presenter.current[indexPath.row].content {
+            cell.alpha = 0.0
+            UIView.animate(withDuration: 1.5, animations: {
+                cell.alpha = 1.0
+            })
+        }
+
+        if let _ = presenter.current[indexPath.row].action {
+            cell.alpha = 0.0
+            UIView.animate(withDuration: 1.5, delay: 1.5, options: .curveEaseInOut, animations: {
+                cell.alpha = 1.0
+            }, completion: nil)
+        }
     }
 }

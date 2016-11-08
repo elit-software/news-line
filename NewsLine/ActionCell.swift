@@ -9,7 +9,11 @@ class ActionCell: UITableViewCell {
         delegate?.actionTriggered(action!)
     }
 
-    @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var actionButton: UIButton! {
+        didSet {
+            actionButton.titleLabel?.numberOfLines = 0
+        }
+    }
 }
 
 protocol ActionCellDelegate: class {

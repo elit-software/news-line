@@ -27,19 +27,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ued-sK-rDu">
-                                            <rect key="frame" x="8" y="28.5" width="359" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="28" y="28.5" width="319" height="26.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="ued-sK-rDu" secondAttribute="bottom" constant="20" id="B3j-Ws-1Y4"/>
-                                        <constraint firstItem="ued-sK-rDu" firstAttribute="leading" secondItem="CHQ-8l-efh" secondAttribute="leadingMargin" id="VKU-1R-pCw"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ued-sK-rDu" secondAttribute="trailing" id="XRv-MG-oZp"/>
+                                        <constraint firstItem="ued-sK-rDu" firstAttribute="top" secondItem="CHQ-8l-efh" secondAttribute="topMargin" constant="20" id="Bjr-cT-hxX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ued-sK-rDu" secondAttribute="bottom" constant="20" id="Efb-QP-rok"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ued-sK-rDu" secondAttribute="bottom" constant="20" id="Mb0-ll-t4B"/>
+                                        <constraint firstItem="ued-sK-rDu" firstAttribute="leading" secondItem="CHQ-8l-efh" secondAttribute="leadingMargin" constant="20" id="VKU-1R-pCw"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ued-sK-rDu" secondAttribute="trailing" constant="20" id="XRv-MG-oZp"/>
                                         <constraint firstItem="ued-sK-rDu" firstAttribute="top" secondItem="CHQ-8l-efh" secondAttribute="topMargin" constant="20" id="eiS-xv-C9f"/>
-                                        <constraint firstItem="ued-sK-rDu" firstAttribute="centerY" secondItem="CHQ-8l-efh" secondAttribute="centerY" id="l6d-2c-xLG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -54,7 +55,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCA-Ha-P7t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="20" width="375" height="4"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <color key="tintColor" red="0.99215686274509807" green="0.57647058823529407" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="Button">
                                                 <color key="titleColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,8 +69,8 @@
                                     <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="xCA-Ha-P7t" secondAttribute="trailing" id="JLa-KO-hO8"/>
-                                        <constraint firstAttribute="bottom" secondItem="xCA-Ha-P7t" secondAttribute="bottom" id="oEz-63-xGg"/>
-                                        <constraint firstItem="xCA-Ha-P7t" firstAttribute="top" secondItem="giJ-iQ-oUU" secondAttribute="top" id="uOp-HG-fWE"/>
+                                        <constraint firstAttribute="bottom" secondItem="xCA-Ha-P7t" secondAttribute="bottom" constant="20" symbolic="YES" id="oEz-63-xGg"/>
+                                        <constraint firstItem="xCA-Ha-P7t" firstAttribute="top" secondItem="giJ-iQ-oUU" secondAttribute="top" constant="20" symbolic="YES" id="uOp-HG-fWE"/>
                                         <constraint firstItem="xCA-Ha-P7t" firstAttribute="leading" secondItem="giJ-iQ-oUU" secondAttribute="leading" id="zDF-wp-dOc"/>
                                     </constraints>
                                 </tableViewCellContentView>
