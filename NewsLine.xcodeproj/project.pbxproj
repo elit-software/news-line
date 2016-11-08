@@ -28,6 +28,8 @@
 		EABE0C511DD0D353006F484E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABE0C501DD0D353006F484E /* Assets.xcassets */; };
 		EABE0C541DD0D353006F484E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABE0C521DD0D353006F484E /* LaunchScreen.storyboard */; };
 		EABE0C5F1DD0D353006F484E /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE0C5E1DD0D353006F484E /* ParserTests.swift */; };
+		EAF11D161DD203B70092D38F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF11D151DD203B70092D38F /* Notification.swift */; };
+		EAF11D181DD204360092D38F /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF11D171DD204360092D38F /* DeviceTokenData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,9 @@
 		EABE0C5A1DD0D353006F484E /* NewsLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABE0C5E1DD0D353006F484E /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		EABE0C601DD0D353006F484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF11D151DD203B70092D38F /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		EAF11D171DD204360092D38F /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
+		EAF11D191DD204750092D38F /* NewsLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewsLine.entitlements; sourceTree = "<group>"; };
 		F362B3C83D4C174795AEEA9E /* Pods-NewsLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsLineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsLineTests/Pods-NewsLineTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +165,9 @@
 		EABE0C481DD0D353006F484E /* NewsLine */ = {
 			isa = PBXGroup;
 			children = (
+				EAF11D191DD204750092D38F /* NewsLine.entitlements */,
+				EAF11D151DD203B70092D38F /* Notification.swift */,
+				EAF11D171DD204360092D38F /* DeviceTokenData.swift */,
 				EA9F72801DD10E9C00486B10 /* Syrian Refugees.html */,
 				EABE0C4B1DD0D353006F484E /* ViewController.swift */,
 				EA9F72601DD0D4E500486B10 /* Reader.swift */,
@@ -247,6 +255,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					EABE0C591DD0D353006F484E = {
 						CreatedOnToolsVersion = 8.1;
@@ -397,12 +413,14 @@
 			files = (
 				EA9F72611DD0D4E500486B10 /* Reader.swift in Sources */,
 				EA9F72731DD0E6AD00486B10 /* PassagePresenter.swift in Sources */,
+				EAF11D181DD204360092D38F /* DeviceTokenData.swift in Sources */,
 				EABE0C4C1DD0D353006F484E /* ViewController.swift in Sources */,
 				EA9F72771DD0EA8D00486B10 /* TableDataBuilder.swift in Sources */,
 				EA9F726F1DD0DE3900486B10 /* PassageBuilder.swift in Sources */,
 				EA9F727D1DD0F03900486B10 /* ActionCell.swift in Sources */,
 				EA9F72751DD0EA2600486B10 /* TableData.swift in Sources */,
 				EA9F72691DD0D97400486B10 /* Parser.swift in Sources */,
+				EAF11D161DD203B70092D38F /* Notification.swift in Sources */,
 				EA9F727B1DD0EFF800486B10 /* ContentCell.swift in Sources */,
 				EA9F72651DD0D88A00486B10 /* PassageData.swift in Sources */,
 				EABE0C4A1DD0D353006F484E /* AppDelegate.swift in Sources */,
@@ -550,6 +568,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewsLine/NewsLine.entitlements;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = NewsLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -565,6 +584,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewsLine/NewsLine.entitlements;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = NewsLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
