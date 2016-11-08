@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,20 +85,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Rifugiati" id="G8F-II-VE1">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="play" id="4gK-OG-5wk">
-                                <color key="tintColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="speak:" destination="K6C-Px-kuI" id="9Oo-1s-rpe"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Speak" id="wl1-Lt-6Yj">
-                                <color key="tintColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="speak:" destination="K6C-Px-kuI" id="iaC-IS-4iE"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="4gK-OG-5wk">
+                            <color key="tintColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="speak:" destination="K6C-Px-kuI" id="9Oo-1s-rpe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-w0-32B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,7 +219,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turkey" translatesAutoresizingMaskIntoConstraints="NO" id="nPU-sv-baO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref" translatesAutoresizingMaskIntoConstraints="NO" id="nPU-sv-baO">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uz-tZ-fxN">
@@ -237,7 +228,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colpo di stato in Turchia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-I1-1FT">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Referendum costituzionale" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-I1-1FT">
                                                                 <rect key="frame" x="20" y="20" width="335" height="40"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -360,9 +351,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="america" width="800" height="500"/>
+        <image name="america" width="1002" height="564"/>
         <image name="brexit" width="600" height="313"/>
+        <image name="ref" width="790" height="431"/>
         <image name="syria" width="1280" height="720"/>
-        <image name="turkey" width="820" height="547"/>
     </resources>
 </document>
