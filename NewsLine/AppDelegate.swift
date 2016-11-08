@@ -26,4 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
         print("userNotificationCenter")
     }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
 }
