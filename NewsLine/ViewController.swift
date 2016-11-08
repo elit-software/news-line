@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class TableViewController: UITableViewController, ActionCellDelegate {
 
@@ -69,5 +70,14 @@ class TableViewController: UITableViewController, ActionCellDelegate {
                 cell.alpha = 1.0
             }, completion: nil)
         }
+    }
+
+    @IBAction func speak(_ sender: Any) {
+        let speechSynthesizer = AVSpeechSynthesizer()
+        let utterance = AVSpeechUtterance(string: "Abbiamo camminato per giorni, attraversando il deserto per raggiungere il campo profughi in Giordania. Ho dovuto lasciare il mio orsacchiotto a casa. Mi chiedo se sia ancora lì...")
+        speechSynthesizer.speak(utterance)
+
+        let utterance2 = AVSpeechUtterance(string: "Vuoi sapere chi sono? O per quale motivo sto scappando?")
+        speechSynthesizer.speak(utterance2)
     }
 }

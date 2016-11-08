@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,7 +85,22 @@
                             <outlet property="delegate" destination="K6C-Px-kuI" id="cGs-aJ-vyU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Rifugiati" id="G8F-II-VE1"/>
+                    <navigationItem key="navigationItem" title="Rifugiati" id="G8F-II-VE1">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="play" id="4gK-OG-5wk">
+                                <color key="tintColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="speak:" destination="K6C-Px-kuI" id="9Oo-1s-rpe"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Speak" id="wl1-Lt-6Yj">
+                                <color key="tintColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="speak:" destination="K6C-Px-kuI" id="iaC-IS-4iE"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-w0-32B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
