@@ -12,6 +12,7 @@ class ActionCell: UITableViewCell {
     @IBOutlet weak var actionButton: UIButton! {
         didSet {
             actionButton.titleLabel?.numberOfLines = 0
+            actionButton.titleLabel?.textAlignment = NSTextAlignment.center
         }
     }
 }
