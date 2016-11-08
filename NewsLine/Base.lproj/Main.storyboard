@@ -156,6 +156,153 @@
                                             <segue destination="K6C-Px-kuI" kind="show" id="OMn-Yb-G5T"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="mdd-oT-8O6">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdd-oT-8O6" id="WIg-ai-5wt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brexit" translatesAutoresizingMaskIntoConstraints="NO" id="Sc5-uH-lW8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8L-La-jaL">
+                                                    <rect key="frame" x="0.0" y="170" width="375" height="80"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aXT-CJ-Pac">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brexit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwg-aC-oHG">
+                                                                <rect key="frame" x="20" y="20" width="335" height="40"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="xwg-aC-oHG" firstAttribute="leading" secondItem="aXT-CJ-Pac" secondAttribute="leading" constant="20" symbolic="YES" id="6sz-vt-CWW"/>
+                                                            <constraint firstItem="xwg-aC-oHG" firstAttribute="top" secondItem="aXT-CJ-Pac" secondAttribute="top" constant="20" symbolic="YES" id="YAp-jH-UXd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xwg-aC-oHG" secondAttribute="trailing" constant="20" symbolic="YES" id="g5F-Bj-nui"/>
+                                                            <constraint firstAttribute="bottom" secondItem="xwg-aC-oHG" secondAttribute="bottom" constant="20" symbolic="YES" id="kqR-WC-beA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="Wcf-qX-KbV"/>
+                                                    </constraints>
+                                                    <blurEffect style="dark"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="w8L-La-jaL" firstAttribute="leading" secondItem="WIg-ai-5wt" secondAttribute="leading" id="6kH-NH-f1Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="w8L-La-jaL" secondAttribute="bottom" id="V44-Od-5b9"/>
+                                                <constraint firstAttribute="trailing" secondItem="w8L-La-jaL" secondAttribute="trailing" id="VqM-Zm-9cp"/>
+                                                <constraint firstItem="Sc5-uH-lW8" firstAttribute="top" secondItem="WIg-ai-5wt" secondAttribute="top" id="Zsb-uW-1dn"/>
+                                                <constraint firstAttribute="bottom" secondItem="Sc5-uH-lW8" secondAttribute="bottom" id="b2p-Qo-gSp"/>
+                                                <constraint firstItem="Sc5-uH-lW8" firstAttribute="leading" secondItem="WIg-ai-5wt" secondAttribute="leading" id="idt-wG-4A1"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sc5-uH-lW8" secondAttribute="trailing" id="wTI-7C-fSK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="Vd7-eX-2kc">
+                                        <rect key="frame" x="0.0" y="500" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vd7-eX-2kc" id="Lib-cL-zXK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turkey" translatesAutoresizingMaskIntoConstraints="NO" id="nPU-sv-baO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uz-tZ-fxN">
+                                                    <rect key="frame" x="0.0" y="170" width="375" height="80"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VKE-TZ-a98">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colpo di stato in Turchia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-I1-1FT">
+                                                                <rect key="frame" x="20" y="20" width="335" height="40"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="IeI-I1-1FT" firstAttribute="leading" secondItem="VKE-TZ-a98" secondAttribute="leading" constant="20" symbolic="YES" id="51U-91-cSn"/>
+                                                            <constraint firstAttribute="bottom" secondItem="IeI-I1-1FT" secondAttribute="bottom" constant="20" symbolic="YES" id="5ZZ-Lc-PLv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="IeI-I1-1FT" secondAttribute="trailing" constant="20" symbolic="YES" id="9UO-dN-9Ar"/>
+                                                            <constraint firstItem="IeI-I1-1FT" firstAttribute="top" secondItem="VKE-TZ-a98" secondAttribute="top" constant="20" symbolic="YES" id="FUx-5j-kx1"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="FY3-MI-Zd3"/>
+                                                    </constraints>
+                                                    <blurEffect style="dark"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nPU-sv-baO" secondAttribute="trailing" id="1OX-og-6aN"/>
+                                                <constraint firstItem="nPU-sv-baO" firstAttribute="leading" secondItem="Lib-cL-zXK" secondAttribute="leading" id="Anz-F5-j8W"/>
+                                                <constraint firstItem="1Uz-tZ-fxN" firstAttribute="leading" secondItem="Lib-cL-zXK" secondAttribute="leading" id="RZ5-6d-Cd3"/>
+                                                <constraint firstAttribute="bottom" secondItem="1Uz-tZ-fxN" secondAttribute="bottom" id="TsR-MB-6Gp"/>
+                                                <constraint firstAttribute="trailing" secondItem="1Uz-tZ-fxN" secondAttribute="trailing" id="lEX-af-IAC"/>
+                                                <constraint firstAttribute="bottom" secondItem="nPU-sv-baO" secondAttribute="bottom" id="lbE-5o-u5d"/>
+                                                <constraint firstItem="nPU-sv-baO" firstAttribute="top" secondItem="Lib-cL-zXK" secondAttribute="top" id="sQT-cI-1kR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="2Pl-js-gW1">
+                                        <rect key="frame" x="0.0" y="750" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Pl-js-gW1" id="9iu-Mx-yFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="america" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-SP-b0o">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-6Z-5S6">
+                                                    <rect key="frame" x="0.0" y="170" width="375" height="80"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yDA-Xp-Ms4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elezioni USA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-8C-POW">
+                                                                <rect key="frame" x="20" y="20" width="335" height="40"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="1YO-8C-POW" secondAttribute="trailing" constant="20" symbolic="YES" id="1ze-i1-Ev5"/>
+                                                            <constraint firstItem="1YO-8C-POW" firstAttribute="leading" secondItem="yDA-Xp-Ms4" secondAttribute="leading" constant="20" symbolic="YES" id="5f3-ic-TWa"/>
+                                                            <constraint firstItem="1YO-8C-POW" firstAttribute="top" secondItem="yDA-Xp-Ms4" secondAttribute="top" constant="20" symbolic="YES" id="bcw-gY-R0N"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1YO-8C-POW" secondAttribute="bottom" constant="20" symbolic="YES" id="h2I-0y-xjN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="nR8-9u-10G"/>
+                                                    </constraints>
+                                                    <blurEffect style="dark"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="LgJ-6Z-5S6" secondAttribute="bottom" id="3xN-8e-RSh"/>
+                                                <constraint firstItem="LgJ-6Z-5S6" firstAttribute="leading" secondItem="9iu-Mx-yFd" secondAttribute="leading" id="IHM-n4-7Bz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cac-SP-b0o" secondAttribute="bottom" id="Vuw-PI-DF3"/>
+                                                <constraint firstItem="Cac-SP-b0o" firstAttribute="top" secondItem="9iu-Mx-yFd" secondAttribute="top" id="Zoj-al-yvc"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cac-SP-b0o" secondAttribute="trailing" id="dSg-le-9Qf"/>
+                                                <constraint firstItem="Cac-SP-b0o" firstAttribute="leading" secondItem="9iu-Mx-yFd" secondAttribute="leading" id="dWh-hK-vh9"/>
+                                                <constraint firstAttribute="trailing" secondItem="LgJ-6Z-5S6" secondAttribute="trailing" id="eSj-aC-nAD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -197,6 +344,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="america" width="800" height="500"/>
+        <image name="brexit" width="600" height="313"/>
         <image name="syria" width="1280" height="720"/>
+        <image name="turkey" width="820" height="547"/>
     </resources>
 </document>
